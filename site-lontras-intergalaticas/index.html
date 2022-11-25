@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <title>Lontras Intergaláticas</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+  <div class="login-container hidden">
+    <div class="background-exit"></div>
+    <div class="forms-container">
+      <div class="form login ">
+        <span class="title">Login</span>
+        
+        <form action="#" method="post">
+
+          <div class="input-field">
+            <input type="text" name="email" placeholder="Enter your email" required>
+            <i class="uil uil-envelope"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <i class="uil uil-lock"></i>
+          </div>
+
+          <div class="check-box">
+            <div class="checkbox-content">
+              <input type="checkbox" id="logcheck"> Remember me
+            </div>
+            <a href="#" class="text">Forgot password?</a>
+          </div>
+
+          <div class="input-field submit">
+            <input type="button" value="Login Now">
+          </div>
+
+          <div class="login-signup">
+            <span>Not a member? </span><a class="signup-now">Signup now</a>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="form register hidden">
+        <span class="title">Register</span>
+
+        <form action="#" method="post">
+
+          <div class="input-field">
+            <input type="text" name="username" placeholder="Enter your name" required>
+            <i class="uil uil-user"></i>
+          </div>
+          
+          <div class="input-field">
+            <input type="text" name="email" placeholder="Enter your email" required>
+            <i class="uil uil-envelope"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="password" placeholder="Create a password" required>
+            <i class="uil uil-lock"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="password" placeholder="Confirm a password" required>
+            <i class="uil uil-lock"></i>
+          </div>
+
+          <div class="check-box">
+            <div class="checkbox-content">
+              <input type="checkbox" id="logcheck"> I accept all terms and coditions
+            </div>
+          </div>
+
+          <div class="input-field submit">
+            <input type="button" value="Register Now">
+          </div>
+
+          <div class="login-signup">
+            <span>Already have an account? </span><a class="login-now">Login now</a>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="header-container" class="header">
+    <header class="h">
+      <div class="logo">
+        <img src="./assets/profile.jpg" alt="Logo">
+        <p>Lontras<br>Intergaláticas</p>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="#home-section">HOME</a>
+          </li>
+          <li>
+            <a href="#about-section">ABOUT</a>
+          </li>
+          <li>
+            <a href="#services-section">SERVICES</a>
+          </li>
+          <li>
+            <a href="#developers-section">DEVELOPERS</a>
+          </li>
+          <li>
+            <button onclick="openLogin()">LOGIN</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="aside-container">
+      <aside>
+        <div class="aside-title">
+          <h3>What are you looking for?</h2>
+        </div>
+        
+        <div class="aside-content">
+
+          <div class="button-aside games">
+            <p>Games</p>
+          </div>
+          <div class="games-tab hidden">
+            <div class="button-aside game1">Zarimbas RPG</div>
+            <div class="button-aside game2">Game 2</div>
+            <div class="button-aside game3">Game 3</div>
+          </div>
+
+
+          <div class="button-aside codes">
+            <p>Codes</p>
+          </div>
+          <div class="codes tab">
+            <div class="button-aside code1">Site Lontras</div>
+            <div class="button-aside code2">Game 2</div>
+            <div class="button-aside code3">Game 3</div>
+          </div>
+
+          <div class="button-aside tools">
+            <p>Tools</p>
+          </div>
+          <div class="tools tab">
+            <div class="button-aside tool1">Web Scrapper</div>
+            <div class="button-aside tool2">Tool 2</div>
+            <div class="button-aside tool3">Tool 3</div>
+          </div>
+
+          <div class="button-aside sugestions">
+            <p>Sugestions</p>
+          </div>
+
+          <div class="button-aside donate">
+            <p>Donate</p>
+          </div>
+
+        </div>
+        
+        <div class="aside-themeswitcher">
+          <ul class="theme-switcher">
+            <li><input id="dark" type="radio" name="theme" checked><i class="uil uil-moon"></i></li>
+            
+            <li><input id="light" type="radio" name="theme"><i class="uil uil-sun"></i></li>
+            
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="main-container">
+    
+    <main>
+      <section id="home-section">
+        <h1>Divirta-se!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis. Saepe veniam recusandae quasi autem culpa quos, porro inventore. Porro illo explicabo labore esse delectus consequuntur dolorum modi cum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora beatae voluptatem veritatis consequatur quibusdam porro aliquam quaerat cumque voluptatibus. Id, eius earum tempora quaerat molestias veniam error tenetur libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut, corrupti et odit fugit, assumenda repellendus corporis at, magnam quo accusamus adipisci? Exercitationem earum adipisci distinctio consectetur officia culpa nam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis. Saepe veniam recusandae quasi autem culpa quos, porro inventore. Porro illo explicabo labore esse delectus consequuntur dolorum modi cum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora beatae voluptatem veritatis consequatur quibusdam porro aliquam quaerat cumque voluptatibus. Id, eius earum tempora quaerat molestias veniam error tenetur libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut, corrupti et odit fugit, assumenda repellendus corporis at, magnam quo accusamus adipisci? Exercitationem earum adipisci distinctio consectetur officia culpa nam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis. Saepe veniam recusandae quasi autem culpa quos, porro inventore. Porro illo explicabo labore esse delectus consequuntur dolorum modi cum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora beatae voluptatem veritatis consequatur quibusdam porro aliquam quaerat cumque voluptatibus. Id, eius earum tempora quaerat molestias veniam error tenetur libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut, corrupti et odit fugit, assumenda repellendus corporis at, magnam quo accusamus adipisci? Exercitationem earum adipisci distinctio consectetur officia culpa nam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis. Saepe veniam recusandae quasi autem culpa quos, porro inventore. Porro illo explicabo labore esse delectus consequuntur dolorum modi cum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora beatae voluptatem veritatis consequatur quibusdam porro aliquam quaerat cumque voluptatibus. Id, eius earum tempora quaerat molestias veniam error tenetur libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut, corrupti et odit fugit, assumenda repellendus corporis at, magnam quo accusamus adipisci? Exercitationem earum adipisci distinctio consectetur officia culpa nam.</p> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis. Saepe veniam recusandae quasi autem culpa quos, porro inventore. Porro illo explicabo labore esse delectus consequuntur dolorum modi cum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora beatae voluptatem veritatis consequatur quibusdam porro aliquam quaerat cumque voluptatibus. Id, eius earum tempora quaerat molestias veniam error tenetur libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut, corrupti et odit fugit, assumenda repellendus corporis at, magnam quo accusamus adipisci? Exercitationem earum adipisci distinctio consectetur officia culpa nam.</p> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis. Saepe veniam recusandae quasi autem culpa quos, porro inventore. Porro illo explicabo labore esse delectus consequuntur dolorum modi cum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora beatae voluptatem veritatis consequatur quibusdam porro aliquam quaerat cumque voluptatibus. Id, eius earum tempora quaerat molestias veniam error tenetur libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut, corrupti et odit fugit, assumenda repellendus corporis at, magnam quo accusamus adipisci? Exercitationem earum adipisci distinctio consectetur officia culpa nam.</p> 
+      </section>
+      <section id="about-section">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis. Saepe veniam recusandae quasi autem culpa quos, porro inventore. Porro illo explicabo labore esse delectus consequuntur dolorum modi cum est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora beatae voluptatem veritatis consequatur quibusdam porro aliquam quaerat cumque voluptatibus. Id, eius earum tempora quaerat molestias veniam error tenetur libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut, corrupti et odit fugit, assumenda repellendus corporis at, magnam quo accusamus adipisci? Exercitationem earum adipisci distinctio consectetur officia culpa nam.</p>
+        <button onclick="testButton()">Test button!</button>
+      </section>
+      <section id="services-section">
+        Content 3
+      </section>
+      <section id="developers-section">
+        <h2>Developers</h2>
+        <div class="developers-container">
+          <div class="developer pedro">
+            <img src="http://github.com/pedrinhopagan.png" alt="">
+            <h3>Pedro</h3>
+            <p>
+              👋 Hi, I’m @pedrinhopagan. <br>
+              I'm a programming studend, focused on web development and passioned about games.
+              <br>
+              Currenty working with these technologies: JavaScript, HTML5, CSS3, Node.JS, React 
+              <br>
+              💞️ I’m looking foward to get a nice expirience from working as a team during our game development :)
+            </p>
+            <div class="developer-p-links">    
+              <a target="_blank" href="https://www.linkedin.com/in/pedro-ant%C3%B4nio-pagan-bonaldo-a98a3b255/" class="button-linkedin"><i class="uil uil-linkedin-alt"></i></a>
+              <a target="_blank" href="https://github.com/pedrinhopagan" class="button-github"><i class="uil uil-github-alt"></i></a>
+              <a target="_blank" href="mailto:pedroantoniobonaldo@gmail.com" class="button-email"><i class="uil uil-envelope"></i></a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5519997855562" class="button-whatsapp"><i class="uil uil-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="developer julio">
+            <img src="http://github.com/juicerq.png" alt="">
+            <h3>Julio</h3>
+            <p>
+              👋 Hi, I’m @juicerq. <br>
+              I'm a programming studend, focused on web development and passioned about games.
+              <br>
+              Currenty working with these technologies: JavaScript, HTML5, CSS3, Node.JS, React 
+              <br>
+              💞️ I’m looking foward to get a nice expirience from working as a team during our game development :)
+            </p>
+            <div class="developer-p-links">    
+              <a target="_blank" href="https://www.linkedin.com/in/pedro-ant%C3%B4nio-pagan-bonaldo-a98a3b255/" class="button-linkedin"><i class="uil uil-linkedin-alt"></i></a>
+              <a target="_blank" href="https://github.com/pedrinhopagan" class="button-github"><i class="uil uil-github-alt"></i></a>
+              <a target="_blank" href="mailto:pedroantoniobonaldo@gmail.com" class="button-email"><i class="uil uil-envelope"></i></a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5519997855562" class="button-whatsapp"><i class="uil uil-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="developer 3">
+            <img src="http://github.com/Kelven-aguiar.png" alt="">
+            <h3>Kelven</h3>
+            <p>
+              👋 Hi, I’m @Kelven-aguiar. <br>
+              I'm a programming studend, focused on web development and passioned about games.
+              <br>
+              Currenty working with these technologies: JavaScript, HTML5, CSS3, Node.JS, React 
+              <br>
+              💞️ I’m looking foward to get a nice expirience from working as a team during our game development :)
+            </p>
+            <div class="developer-p-links">    
+              <a target="_blank" href="https://www.linkedin.com/in/pedro-ant%C3%B4nio-pagan-bonaldo-a98a3b255/" class="button-linkedin"><i class="uil uil-linkedin-alt"></i></a>
+              <a target="_blank" href="https://github.com/pedrinhopagan" class="button-github"><i class="uil uil-github-alt"></i></a>
+              <a target="_blank" href="mailto:pedroantoniobonaldo@gmail.com" class="button-email"><i class="uil uil-envelope"></i></a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5519997855562" class="button-whatsapp"><i class="uil uil-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="developer 4">
+            <img src="http://github.com/costaesteves.png" alt="">
+            <h3>Xubitão</h3>
+            <p>
+              👋 Hi, I’m @costaesteves. <br>
+              I'm a programming studend, focused on web development and passioned about games.
+              <br>
+              Currenty working with these technologies: JavaScript, HTML5, CSS3, Node.JS, React 
+              <br>
+              💞️ I’m looking foward to get a nice expirience from working as a team during our game development :)
+            </p>
+            <div class="developer-p-links">    
+              <a target="_blank" href="https://www.linkedin.com/in/pedro-ant%C3%B4nio-pagan-bonaldo-a98a3b255/" class="button-linkedin"><i class="uil uil-linkedin-alt"></i></a>
+              <a target="_blank" href="https://github.com/pedrinhopagan" class="button-github"><i class="uil uil-github-alt"></i></a>
+              <a target="_blank" href="mailto:pedroantoniobonaldo@gmail.com" class="button-email"><i class="uil uil-envelope"></i></a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5519997855562" class="button-whatsapp"><i class="uil uil-whatsapp"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="extra-section">
+        Content 5
+      </section>
+    </main>
+    <div id="videos-container">
+      <div id="videos">
+        <video preload="auto" loop muted class="video" src="./assets/68954ef9-8782-4789-87ab-d269022742b6.mp4"></video>
+        <video preload="auto" loop muted class="video" src="./assets/2e2b49e1-1ac2-498e-bbe0-09314d263492.mp4"></video>
+        <video preload="auto" loop muted class="video" src="./assets/30761f2e-391d-4424-879e-890a9d7fabf5.mp4"></video>
+        <video preload="auto" loop muted class="video" src="./assets/378a45e8-28ed-435a-aa8a-6d1fa4abdd27.mp4"></video>
+        <video preload="auto" loop muted class="video" src="./assets/c0b2eba0-2abf-41f1-b80a-ca53556d9ee2.mp4"></video>
+        <video preload="auto" loop muted class="video" src="./assets/c0b2eba0-2abf-41f1-b80a-ca53556d9ee2.mp4"></video>
+        <video preload="auto" loop muted class="video" src="./assets/c0b2eba0-2abf-41f1-b80a-ca53556d9ee2.mp4"></video>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div></div>
+  </footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
